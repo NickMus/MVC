@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html xmlns:form="http://www.thymeleaf.org" lang="en">
+
+<html>
+<head>
+    <title>All Students</title>
+</head>
+
+<body>
+<table>
+    <tr th:each="student : ${studentList}">
+        <td th:text="${student.name}"></td>
+        <td th:text="${student.age}"></td>
+    </tr>
+</table>
+</body>
+</html>
